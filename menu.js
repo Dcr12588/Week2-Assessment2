@@ -103,7 +103,7 @@ console.log(category)
 
 //CODE HERE
 
-let foodArray = {
+let foodArr = {
 name: `Pasta`,
 price: 18,
 category: `entree`,
@@ -127,8 +127,8 @@ tags: [`adult-size`,`spicy`]
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+const filteredFood = foodArr.tags.filter(foodArr => foodArr.length);
+console.log(foodArr.tags[1])
 
 
 //////////////////PROBLEM 5////////////////////
