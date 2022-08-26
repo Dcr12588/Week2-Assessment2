@@ -59,8 +59,13 @@ const summedPrice = cart.reduce((total, current) => total + current.price,0)
 
 //CODE HERE
 
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    const totalBeforeCoupon = cartTotal * (1 + tax)
+    const finalPrice = totalBeforeCoupon - couponValue
 
-
+    return finalPrice
+}
+console.log(calcFinalPrice(summedPrice, 5, 0.6))
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 
@@ -92,3 +97,12 @@ const summedPrice = cart.reduce((total, current) => total + current.price,0)
 */
 
 //CODE HERE
+
+const firstCustomer ={
+    firstName: `Danny`,
+    lastName: `Ramirez`,
+    address: `999 street`,
+    city: `LA`,
+    
+}
+
