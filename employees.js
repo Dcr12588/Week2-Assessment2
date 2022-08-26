@@ -21,7 +21,16 @@
 
 //CODE HERE
 
+class Employee {
+    constructor(name,shifts){
+        this.name = name
+        this.shifts = shifts  
+    }
 
+    getSchedule(){
+        console.log(`${this.name} works ${this.shifts}`)
+    }
+}
 
 /*
     Create a new instance of your class.
@@ -35,12 +44,16 @@
 
 //CODE HERE
 
+const empOne = new Employee(`Danny`, `Full-time`)
+
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
 //CODE HERE
+
+empOne.getSchedule()
 
 
 /*
@@ -57,7 +70,9 @@
 
 //CODE HERE
 
-
+const empTwo = {...empOne}
+empTwo.name = `Nick`
+console.log(empTwo)
 
 //////////////////PROBLEM 2////////////////////
 /*  
