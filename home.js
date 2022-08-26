@@ -146,4 +146,5 @@ console.log(deals[0].title.replace(`15`,`10`));
 
 //CODE HERE
 
-console.log(deals[1].desc.replace(`March`,`April`));
+console.log(deals[1].desc.trim().replace(`March`,`April`));
+
