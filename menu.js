@@ -103,14 +103,48 @@ console.log(category)
 
 //CODE HERE
 
-let foodArr = {
+const foodArr = [
+{
 name: `Pasta`,
 price: 18,
 category: `entree`,
 popularity: 8,
 rating: 4,
 tags: [`adult-size`,`spicy`]
-}
+},
+{
+name: `Pasta`,
+price: 18,
+category: `entree`,
+popularity: 8,
+rating: 4,
+tags: [`adult-size`,`spicy`]
+},
+{
+name: `Pasta`,
+price: 18,
+category: `entree`,
+popularity: 8,
+rating: 4,
+tags: [`adult-size`,`spicy`]
+},
+{
+    name: `Pasta`,
+    price: 18,
+    category: `entree`,
+    popularity: 8,
+    rating: 4,
+    tags: [`adult-size`,`spicy`]
+    },
+    {
+        name: `Pasta`,
+        price: 18,
+        category: `entree`,
+        popularity: 8,
+        rating: 4,
+        tags: [`adult-size`,`spicy`]
+        },
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -127,9 +161,9 @@ tags: [`adult-size`,`spicy`]
 
 //CODE HERE
 
-const filteredFood = foodArr.tags.filter(foodArr => foodArr.length);
-console.log(foodArr.tags[1])
-
+const filteredFood = foodArr.filter((food) => food.tags.includes(`spicy`))
+   
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -172,8 +206,15 @@ console.log(foodArr.tags[1])
 
 //CODE HERE
 
-filterByProperty = (property, number, type) => {
-    
+const filterByProperty = (property, number, type) => {
+    const filteredFood = foodArr.filter((food) => {
+        if(type ===  `above`){
+            return food[property] >= number
+        }else{
+            return food[property] <= number
+        }
+    })
+    return filteredFood
 }
 
 /*
@@ -184,3 +225,6 @@ filterByProperty = (property, number, type) => {
 */
 
 //CODE HERE
+
+
+console.log(filterByProperty(`popularity`, 3, `below`))

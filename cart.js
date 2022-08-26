@@ -35,10 +35,9 @@ const cart = [
 
 //CODE HERE
 const initialValue = 0;
-const summedPrice = cart.reduce(
-(previousValue, currentValue) => previousValue + currentValue,
-initialValue
- );
+const summedPrice = cart.reduce((total, current) => total + current.price,0)
+
+
 
  console.log(summedPrice);
 
