@@ -103,6 +103,6 @@ const firstCustomer ={
     lastName: `Ramirez`,
     address: `999 street`,
     city: `LA`,
-    
+    phoneNumber: 8587361377
 }
 
