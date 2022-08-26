@@ -23,7 +23,9 @@
 
 //CODE HERE
 
-const greetUser = ()
+const greetUser = (username) => {
+    return 
+}
 
 
 
