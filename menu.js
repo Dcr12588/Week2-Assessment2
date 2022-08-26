@@ -74,7 +74,8 @@ console.log(pizza.tags[1])
 
 //CODE HERE
 
-
+let {price} = pizza
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -85,6 +86,8 @@ console.log(pizza.tags[1])
 
 //CODE HERE
 
+let {category} = pizza
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -100,6 +103,14 @@ console.log(pizza.tags[1])
 
 //CODE HERE
 
+let foodArray = {
+name: `Pasta`,
+price: 18,
+category: `entree`,
+popularity: 8,
+rating: 4,
+tags: [`adult-size`,`spicy`]
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -116,7 +127,7 @@ console.log(pizza.tags[1])
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 
 
