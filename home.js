@@ -26,8 +26,9 @@
 const greetUser = (username) => {
     return `Welcome back, ${username}`
 }
-const username = (`Andrew`)
-console.log(username)
+// const username = (`Andrew`)
+// console.log(username)
+console.log(greetUser(`Danny`))
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -52,17 +53,20 @@ console.log(username)
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-const customerZip1 = (84606)
-const customerZip2 = (85205)
+
 const canWeDeliver = (zipCode) => {
     for(let i = 0; i < deliveryAreaZipCodes.length; i++){
-        if(deliveryAreaZipCodes[i] === customerZip1){
-            console.log(`Sorry we cant deliver to that address!`)
-        }else if (deliveryAreaZipCodes[i] === customerZip2){
-            console.log(`Youre in our delivery zone`)
+        if(deliveryAreaZipCodes[i] === zipCode){
+            return `Youre in our delivery zone`
         }
-    }
-} 
+     }
+     return `Sorry, we cant deliver to that address`   
+}
+    
+ console.log(canWeDeliver(85205))
+
+
+
 
 /* 
     Problem 2 Continued

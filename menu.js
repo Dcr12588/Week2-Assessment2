@@ -172,6 +172,9 @@ console.log(foodArr.tags[1])
 
 //CODE HERE
 
+filterByProperty = (property, number, type) => {
+    
+}
 
 /*
     Invoke the `filterByProperty` function passing
